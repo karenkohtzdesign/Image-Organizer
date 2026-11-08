@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Organizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar"></header>
+
+  <div class="layout">
+    <aside class="filters">
+      <div class="filters-header">
+        <h2 class="title">Filters</h2>
+        <button class="collapse-button" aria-label="Collapse filters">&#8249;</button>
+      </div>
+
+      <div class="tag-group">
+        <span class="tag">Seasonal <span class="tag-icon">+</span></span>
+        <span class="tag">DIY <span class="tag-icon">+</span></span>
+        <span class="tag">Art <span class="tag-icon">+</span></span>
+        <span class="tag">Fashion <span class="tag-icon">+</span></span>
+      </div>
+
+      <div class="field">
+        <label class="input-label" for="keywords">Keywords</label>
+        <input class="input" id="keywords" type="text" placeholder="Search keywords">
+      </div>
+
+      <div class="field">
+        <label class="input-label" for="date-added">Date Added</label>
+        <div class="input-wrapper">
+          <input class="input" id="date-added" type="text" placeholder="Select a date">
+          <svg class="input-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#1e1e1e" stroke-width="1.2" aria-hidden="true">
+            <rect x="1.5" y="2.5" width="11" height="10" rx="1"/>
+            <path d="M1.5 5.5h11M4.5 1v3M9.5 1v3"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="input-label" for="type">Type</label>
+        <input class="input" id="type" type="text" placeholder="Select a type">
+      </div>
+
+      <div class="button-group">
+        <button class="button secondary-button">Clear</button>
+        <button class="button primary-button">Apply</button>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="content-header">
+        <div class="active-tags">
+          <span class="tag tag-active">Seasonal <span class="tag-icon">&times;</span></span>
+        </div>
+        <button class="view-by">View by <img src="images/chevron-down.svg" alt=""></button>
+      </div>
+
+      <div class="grid">
+        <div class="column">
+          <div class="card">
+            <div class="card-image img-xl"><img src="images/image1.png" alt=""><img class="pencil" src="images/pencil.svg" alt=""></div>
+            <p class="card-text">Text</p>
+            <p class="card-text card-strong">3 Sub-boards</p>
+          </div>
+          <div class="card">
+            <div class="card-image img-md"><img src="images/image6.png" alt=""><img class="pencil" src="images/pencil.svg" alt=""></div>
+            <p class="card-text">Text</p>
+            <p class="card-text card-strong">3 Sub-boards</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-image img-lg"><img src="images/image2.png" alt=""><img class="pencil" src="images/pencil.svg" alt=""></div>
+            <p class="card-text">Text</p>
+            <p class="card-text card-strong">3 Sub-boards</p>
+          </div>
+          <div class="card">
+            <div class="card-image img-md"><img src="images/image7.png" alt=""><img class="pencil" src="images/pencil.svg" alt=""></div>
+            <p class="card-text">Text</p>
+            <p class="card-text card-strong">3 Sub-boards</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-image img-lg"><img src="images/image3.png" alt=""><img class="pencil" src="images/pencil.svg" alt=""></div>
+            <p class="card-text">Text</p>
+            <p class="card-text card-strong">3 Sub-boards</p>
+          </div>
+          <div class="card">
+            <div class="card-image img-md"><img src="images/image8.png" alt=""><img class="pencil" src="images/pencil.svg" alt=""></div>
+            <p class="card-text">Text</p>
+            <p class="card-text card-strong">3 Sub-boards</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-image img-md"><img src="images/image4.png" alt=""><img class="pencil" src="images/pencil.svg" alt=""></div>
+            <p class="card-text">Text</p>
+            <p class="card-text card-strong">3 Sub-boards</p>
+          </div>
+          <div class="card">
+            <div class="card-image img-md"><img src="images/image9.png" alt=""><img class="pencil" src="images/pencil.svg" alt=""></div>
+            <p class="card-text">Text</p>
+            <p class="card-text card-strong">3 Sub-boards</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-image img-lg"><img src="images/image5.png" alt=""><img class="pencil" src="images/pencil.svg" alt=""></div>
+            <p class="card-text">Text</p>
+            <p class="card-text card-strong">3 Sub-boards</p>
+          </div>
+          <div class="card">
+            <div class="card-image img-md"><img src="images/image10.png" alt=""><img class="pencil" src="images/pencil.svg" alt=""></div>
+            <p class="card-text">Text</p>
+            <p class="card-text card-strong">3 Sub-boards</p>
+          </div>
+        </div>
+      </div>
+
+      <nav class="pagination">
+        <a class="page current" href="#">1</a>
+        <a class="page" href="#">2</a>
+        <span class="page-gap">&hellip;</span>
+        <a class="page" href="#">4</a>
+        <a class="page" href="#">5</a>
+      </nav>
+    </main>
+  </div>
+</body>
+</html>
